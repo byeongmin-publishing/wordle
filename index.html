@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <button type="button" class="menu">메뉴<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg></button>
+        <h1 class="title">Worlde</h1>
+        <div class="sub_menu">
+            <button type="button" class="help">도움<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M528 320C528 205.1 434.9 112 320 112C205.1 112 112 205.1 112 320C112 434.9 205.1 528 320 528C434.9 528 528 434.9 528 320zM64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576C178.6 576 64 461.4 64 320zM320 240C302.3 240 288 254.3 288 272C288 285.3 277.3 296 264 296C250.7 296 240 285.3 240 272C240 227.8 275.8 192 320 192C364.2 192 400 227.8 400 272C400 319.2 364 339.2 344 346.5L344 350.3C344 363.6 333.3 374.3 320 374.3C306.7 374.3 296 363.6 296 350.3L296 342.2C296 321.7 310.8 307 326.1 302C332.5 299.9 339.3 296.5 344.3 291.7C348.6 287.5 352 281.7 352 272.1C352 254.4 337.7 240.1 320 240.1zM288 432C288 414.3 302.3 400 320 400C337.7 400 352 414.3 352 432C352 449.7 337.7 464 320 464C302.3 464 288 449.7 288 432z"/></svg></button>
+            <button type="button" class="rank">랭킹<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M353.8 118.1L330.2 70.3C326.3 62 314.1 61.7 309.8 70.3L286.2 118.1L233.9 125.6C224.6 127 220.6 138.5 227.5 145.4L265.5 182.4L256.5 234.5C255.1 243.8 264.7 251 273.3 246.7L320.2 221.9L366.8 246.3C375.4 250.6 385.1 243.4 383.6 234.1L374.6 182L412.6 145.4C419.4 138.6 415.5 127.1 406.2 125.6L353.9 118.1zM288 320C261.5 320 240 341.5 240 368L240 528C240 554.5 261.5 576 288 576L352 576C378.5 576 400 554.5 400 528L400 368C400 341.5 378.5 320 352 320L288 320zM80 384C53.5 384 32 405.5 32 432L32 528C32 554.5 53.5 576 80 576L144 576C170.5 576 192 554.5 192 528L192 432C192 405.5 170.5 384 144 384L80 384zM448 496L448 528C448 554.5 469.5 576 496 576L560 576C586.5 576 608 554.5 608 528L608 496C608 469.5 586.5 448 560 448L496 448C469.5 448 448 469.5 448 496z"/></svg></button>
+            <button type="button" class="setting">설정<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M259.1 73.5C262.1 58.7 275.2 48 290.4 48L350.2 48C365.4 48 378.5 58.7 381.5 73.5L396 143.5C410.1 149.5 423.3 157.2 435.3 166.3L503.1 143.8C517.5 139 533.3 145 540.9 158.2L570.8 210C578.4 223.2 575.7 239.8 564.3 249.9L511 297.3C511.9 304.7 512.3 312.3 512.3 320C512.3 327.7 511.8 335.3 511 342.7L564.4 390.2C575.8 400.3 578.4 417 570.9 430.1L541 481.9C533.4 495 517.6 501.1 503.2 496.3L435.4 473.8C423.3 482.9 410.1 490.5 396.1 496.6L381.7 566.5C378.6 581.4 365.5 592 350.4 592L290.6 592C275.4 592 262.3 581.3 259.3 566.5L244.9 496.6C230.8 490.6 217.7 482.9 205.6 473.8L137.5 496.3C123.1 501.1 107.3 495.1 99.7 481.9L69.8 430.1C62.2 416.9 64.9 400.3 76.3 390.2L129.7 342.7C128.8 335.3 128.4 327.7 128.4 320C128.4 312.3 128.9 304.7 129.7 297.3L76.3 249.8C64.9 239.7 62.3 223 69.8 209.9L99.7 158.1C107.3 144.9 123.1 138.9 137.5 143.7L205.3 166.2C217.4 157.1 230.6 149.5 244.6 143.4L259.1 73.5zM320.3 400C364.5 399.8 400.2 363.9 400 319.7C399.8 275.5 363.9 239.8 319.7 240C275.5 240.2 239.8 276.1 240 320.3C240.2 364.5 276.1 400.2 320.3 400z"/></svg></button>
+        </div>
+    </header>
+
+    <main>
+        <div class="board-row row-0">
+            <div class="board-block" data-index="00"></div>
+            <div class="board-block" data-index="01"></div>
+            <div class="board-block" data-index="02"></div>
+            <div class="board-block" data-index="03"></div>
+            <div class="board-block" data-index="04"></div>
+        </div>
+        <div class="board-row row-1">
+            <div class="board-block" data-index="10"></div>
+            <div class="board-block" data-index="11"></div>
+            <div class="board-block" data-index="12"></div>
+            <div class="board-block" data-index="13"></div>
+            <div class="board-block" data-index="14"></div>
+        </div>
+        <div class="board-row row-2">
+            <div class="board-block" data-index="20"></div>
+            <div class="board-block" data-index="21"></div>
+            <div class="board-block" data-index="22"></div>
+            <div class="board-block" data-index="23"></div>
+            <div class="board-block" data-index="24"></div>
+        </div>
+        <div class="board-row row-3">
+            <div class="board-block" data-index="30"></div>
+            <div class="board-block" data-index="31"></div>
+            <div class="board-block" data-index="32"></div>
+            <div class="board-block" data-index="33"></div>
+            <div class="board-block" data-index="34"></div>
+        </div>
+        <div class="board-row row-4">
+            <div class="board-block" data-index="40"></div>
+            <div class="board-block" data-index="41"></div>
+            <div class="board-block" data-index="42"></div>
+            <div class="board-block" data-index="43"></div>
+            <div class="board-block" data-index="44"></div>
+        </div>
+        <div class="board-row row-5">
+            <div class="board-block" data-index="50"></div>
+            <div class="board-block" data-index="51"></div>
+            <div class="board-block" data-index="52"></div>
+            <div class="board-block" data-index="53"></div>
+            <div class="board-block" data-index="54"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="keyboard-row">
+            <button type="button" data-key="Q">Q</button>
+            <button type="button" data-key="W">W</button>
+            <button type="button" data-key="E">E</button>
+            <button type="button" data-key="R">R</button>
+            <button type="button" data-key="T">T</button>
+            <button type="button" data-key="Y">Y</button>
+            <button type="button" data-key="U">U</button>
+            <button type="button" data-key="I">I</button>
+            <button type="button" data-key="O">O</button>
+            <button type="button" data-key="P">P</button>
+        </div>
+        <div class="keyboard-row">
+            <button type="button" data-key="A">A</button>
+            <button type="button" data-key="S">S</button>
+            <button type="button" data-key="D">D</button>
+            <button type="button" data-key="F">F</button>
+            <button type="button" data-key="G">G</button>
+            <button type="button" data-key="H">H</button>
+            <button type="button" data-key="J">J</button>
+            <button type="button" data-key="K">K</button>
+            <button type="button" data-key="L">L</button>
+        </div>
+        <div class="keyboard-row">
+            <button type="button" class="enter" data-key="enter">ENTER</button>
+            <button type="button" data-key="Z">Z</button>
+            <button type="button" data-key="X">X</button>
+            <button type="button" data-key="C">C</button>
+            <button type="button" data-key="V">V</button>
+            <button type="button" data-key="B">B</button>
+            <button type="button" data-key="N">N</button>
+            <button type="button" data-key="M">M</button>
+            <button type="button" class="del" data-key="del">지우기<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M576 192C576 156.7 547.3 128 512 128L205.3 128C188.3 128 172 134.7 160 146.7L9.4 297.4C3.4 303.4 0 311.5 0 320C0 328.5 3.4 336.6 9.4 342.6L160 493.3C172 505.3 188.3 512 205.3 512L512 512C547.3 512 576 483.3 576 448L576 192zM284.1 252.1C293.5 242.7 308.7 242.7 318 252.1L351.9 286L385.8 252.1C395.2 242.7 410.4 242.7 419.7 252.1C429 261.5 429.1 276.7 419.7 286L385.8 319.9L419.7 353.8C429.1 363.2 429.1 378.4 419.7 387.7C410.3 397 395.1 397.1 385.8 387.7L351.9 353.8L318 387.7C308.6 397.1 293.4 397.1 284.1 387.7C274.8 378.3 274.7 363.1 284.1 353.8L318 319.9L284.1 286C274.7 276.6 274.7 261.4 284.1 252.1z"/></svg></button>
+        </div>
+    </footer>
+</body>
+</html>

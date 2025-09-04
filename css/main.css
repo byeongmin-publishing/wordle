@@ -1,0 +1,17 @@
+header{display:flex;justify-content:space-between;align-items:center;position:relative;height:80px;}
+header .title{position:absolute;top:0;left:50%;margin:0;line-height:80px;transform:translateX(-50%);}
+header button{background-color:transparent;border:none;font-size:0;line-height:0;}
+header button svg{width:40px;height:40px;}
+
+
+main{display:flex;flex-direction:column;justify-items:center;align-items:center;gap:5px;margin-top:50px;}
+.board-row{display:flex;justify-items:center;align-items:center;gap:5px;}
+.board-block{display:flex;justify-items:center;align-items:center;width:60px;height:60px;border:3px solid #d3d6da;}
+
+
+footer{display:flex;flex-direction:column;justify-items:center;align-items:center;gap:5px;margin-top:50px;}
+.keyboard-row{display:flex;justify-items:center;align-items:center;gap:5px;}
+.keyboard-row button{width:50px;height:70px;background-color:#d3d6da;border:none;border-radius:5px;font-size:20px;font-weight:600;cursor:pointer;}
+.keyboard-row button.enter{width:80px;font-size:15px;}
+.keyboard-row button.del{width:80px;font-size:0;}
+.keyboard-row button.del svg{width:40px;height:40px;}
