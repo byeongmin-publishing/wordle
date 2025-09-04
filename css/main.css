@@ -6,7 +6,7 @@ header button svg{width:40px;height:40px;}
 
 main{display:flex;flex-direction:column;justify-items:center;align-items:center;gap:5px;margin-top:50px;}
 .board-row{display:flex;justify-items:center;align-items:center;gap:5px;}
-.board-block{display:flex;justify-items:center;align-items:center;width:60px;height:60px;border:3px solid #d3d6da;}
+.board-block{display:flex;justify-content:center;align-items:center;width:60px;height:60px;border:3px solid #d3d6da;font-size:20px;font-weight:600;text-align:center;}
 
 
 footer{display:flex;flex-direction:column;justify-items:center;align-items:center;gap:5px;margin-top:50px;}
